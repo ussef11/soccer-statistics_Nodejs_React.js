@@ -1,0 +1,15 @@
+.playerDiv {
+    height:482px;
+    width:100%;
+    position: relative;
+  }
+
+  .tit{
+    color: white;
+
+  }
+
+  
+  .titdiv{
+    margin-bottom: 35%
+  }

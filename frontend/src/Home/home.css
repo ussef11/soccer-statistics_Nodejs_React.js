@@ -1,0 +1,419 @@
+.home{
+    padding: 8px;
+
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.logos{
+    display: flex;
+    position: relative;
+    top: 58px;
+}
+.cover
+{
+    height: 234px;
+    background-image: url('../../public/back.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+    
+   
+    
+    background-size: 100%;
+    background-size: cover;
+ 
+    border-radius: 24px;
+}
+
+img{
+    width: 76px;
+
+}
+.homeTeam{
+    width: 40%;
+    margin-right: auto;
+    display: grid
+}
+.awayTeam{
+    width: 40%;
+    margin-left: auto;
+    margin-right: 14px;
+    display: grid
+}
+.awayt{
+    width: 35%;
+    display: grid;
+}
+
+.score{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    bottom: 152px;
+}
+
+.homescore{
+    margin-right: 15px;
+}
+
+.awayscore{
+    margin-left: 15px;
+}
+span{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.live{
+    margin: auto;
+    position: relative;
+   
+    top: -89PX;
+    
+    width: 74PX;
+    height: 27px;
+    border-radius: 20px;
+    background-color: red;
+   
+}
+.vers{    width: 33%}
+.livefin{
+    margin: auto;
+    position: relative;
+   
+    top: -89PX;
+    width: 83PX;
+    height: 27px;
+
+    border-radius: 20px;
+    background-color: #606060;
+   
+}
+
+.liveRed{
+    margin: auto;
+    position: relative;
+   
+    top: -89PX;
+    width: 74PX;
+    height: 27px;
+
+    border-radius: 20px;
+    background-color: rgb(73, 62, 62);
+   
+}
+.min{
+    position: relative;
+    font-size: 23px;
+    bottom: 3px;
+ 
+}
+
+.minstart{
+    position: relative;
+    font-size: 15px;
+    bottom: 1px;
+}
+
+.minstarta{
+    position: relative;
+    font-size: 15px;
+    bottom: -2px;
+}
+
+.homename{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: wheat;
+}
+.awayname{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: wheat;
+}
+
+.vs{
+    position: relative;
+    width: 133px;
+    bottom: 152px;
+}
+ .time {
+  
+    display: flex;
+    font-size: 20px;
+}
+.local{
+  
+    display: flex;
+    font-size: 20px;
+}
+.timediv{
+    margin-right: 32px
+}
+
+ .localimg{
+    font-size:27px;
+color: rgb(255 111 35);
+    font-weight: 900;
+
+} 
+.timeimg{
+    width: 23px;
+
+}
+
+
+.info{
+    right:0;
+    left:0;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+
+.tournomantdiv{
+    position: relative;
+    bottom: 91px;
+}
+
+.tournament{ font-weight: 900;
+    color: wheat;
+    font-size: 17px;
+}
+
+.line{
+    position: relative;
+    bottom: 122px;
+}
+
+.vertical
+{
+    width: 0;
+    justify-content: center;
+    display: flex;
+
+}
+.linever{
+    bottom: 9px;
+    height: 37px;
+    position: relative;
+    right: 14px;
+}
+.Homecontent{
+    display: block
+}
+
+.bar{
+    display: flex;
+    margin-top: 16px;
+}
+.butCalendar{
+    width: 6px;
+    border: none;
+    background-color: #131313;
+ 
+}
+
+.Schedule{
+    margin-right: 111px;
+    font-size: 17px;
+    font-weight: 900;
+    color: wheat;
+}
+
+/* .date{
+   
+    position: relative;
+    height: 27px;
+    width: 31px;
+    background-image: url('../svg/calendar.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    top: -3px;
+    margin-left: 23px;
+} */
+
+
+.inpcal{
+    margin:auto;
+    margin-left: 100%;
+    position: relative;
+    top: -7px;
+    
+    background-size: 81%;
+    width: 20px;
+    cursor: pointer;
+    width: 32px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    border: none;
+}
+
+.homeim{
+    margin-bottom: 12px;
+    margin: auto;
+    width: 39px;
+}
+
+.awayim{
+    margin: auto;
+    width: 39px;
+}
+.tmatch{   color: black; font-size: 15px;}
+.timematch{
+    position: relative;
+    top: 7px;
+    width: 25px;
+}
+.tournmatch{
+ 
+    height: 26px;
+   
+    width: 56px;
+    position: relative;
+    top: 7px;
+    margin-right: 16px;
+}
+
+.infom{
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+   
+    top: -6px;
+
+    
+}
+.homet{
+    width: 27%;
+   
+    display: grid;
+}
+.details{border-color: #558bbb;
+    border-bottom: 1px solid;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 4px;
+}
+.matches{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    /* height: 75px; */
+    margin-bottom: 20px;
+}
+
+.hname{
+    margin-top: 12px;
+    font-size: 15px;
+   
+    position: relative;
+    top: -10px;
+    color: black;
+
+}
+.aname{
+    margin-top: 12px;
+    
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+    color: black;
+}
+
+ .vsimage{       width: 115px;
+    position: relative;
+    left: 7px
+} 
+
+.resultdiv{
+    margin-left: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    width: 33%;
+    position: relative;
+    /* left: 10px; */
+    top: 3px;
+
+}
+
+.homer{
+color: black;
+font-weight: 900;
+}
+.sp{
+    margin-left: 4px;
+    color: black;
+    font-weight: 900;
+    margin-right: 3px;
+}
+.awayr{
+    color: black;
+    font-weight: 900;
+}
+
+.liveNow{
+    position: relative;
+ 
+    border-radius: 10px;
+    background-color: #606060;
+    width: 74PX;
+    height: 27px;
+    margin: auto;
+    
+   
+    margin: auto;
+}
+.liveNowfin{
+    position: relative;
+  
+    border-radius: 10px;
+    
+
+    background-color: #606060;
+
+    width: 64%;
+    height: 27px;
+    
+   
+    margin: auto;
+}
+.livenowred{
+    position: relative;
+   
+    border-radius: 10px;
+    background-color: #fa0000;
+    width: 74PX;
+    height: 27px;
+    margin: auto;
+    
+   
+    margin: auto;
+}
+
+.chanelspan{
+    font-size : 18px
+}
+
+.chadiv{
+    margin: auto;
+    position: relative;
+    top: 4px;
+}
+
+.infomdiv{
+    margin-left: 23px;
+}

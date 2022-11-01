@@ -1,0 +1,115 @@
+.title{
+    color: coral;
+  }
+  .title :hover{
+    color: rgb(255, 238, 0);
+  }
+  body{
+padding: 0; 
+background-color: rgb(19, 19, 19);
+ }
+
+  
+  .nav{
+    border-bottom: 0.2px solid rgb(0, 0, 0);
+    background-color: black;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .navopt{
+    height: 0px;
+    position: relative;
+      top: 26px;
+      margin-left: 107px
+  }
+  .content-blog .title{
+    text-align: center;
+  }
+  
+  .content{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+  }
+  
+  .a{
+    text-decoration: none;
+      color: rgb(253, 253, 253);
+      font-weight: 600;
+      padding: 5px;
+  }
+  .a:hover{
+    color: brown;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navopt{
+    
+        margin-left: 107px;
+        display: flex;
+    }
+  
+  }
+  .icon{
+    width: 33px;
+    margin-left: auto;
+  }
+  .close{
+    width: 33px;
+    margin-left: auto;
+    background-color: black;
+    border: none;
+  }
+  
+  @media screen and (min-width: 400px) {
+    .navopt{
+    
+        margin-left: auto;
+        display: flex;
+    }
+  
+  }
+
+  .optmobile{
+   text-align: center;
+   transition-timing-function: linear;
+   transition: width 2s;
+  }
+ li{
+    margin-bottom: 13px;
+
+ }
+ ul{
+    padding: 0
+ }
+ 
+ .search{
+  display: flex;
+  margin-bottom: 43px;
+  position: relative;
+  height: 33px;
+  border-radius: 21px;
+  bottom: 4px;
+  justify-content: center;
+ }
+ .searchicon{
+  right: 58px;
+ 
+  font-weight: 900;
+  border-radius: 21px;
+  color: #303030b3;
+  position: relative;
+  top: 23px;
+
+  text-align: center;
+  font-size: 20px;
+
+  
+ }
+ .buttonSrearch{
+  border: none;
+  background-color: white;
+ }

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Quicksand';
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.title{
+  color: coral;
+}
+.title :hover{
+  color: rgb(255, 238, 0);
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navopt{
+  height: 0px;
+  position: relative;
+    top: 26px;
+    margin-left: 107px
+}
+.content-blog .title{
+  text-align: center;
+}
+
+.content{
+  
+  display: flex;
+}
+
+.a{
+  text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+    padding: 5px;
+}
+.a:hover{
+  color: brown;
+}
+
+@media screen and (max-width: 400px) {
+  .navopt{
+  
+      margin-left: 107px;
+      display: flex;
+  }
+
+}
+
+@media screen and (min-width: 400px) {
+  .navopt{
+  
+      margin-left: auto;
+      display: flex;
+  }
+
+}
+
+.bloglist{
+  justify-content: center;
+  display: block;
+
+}
+.bloglist :hover{
+  background-color: antiquewhite;
+  border-radius: 20PX;
+
+}
+
+h1{
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .bloglist{
+    display: block;
+  
+  }
+  
+}
+.blog{
+  text-align: center;
+  margin: 4vw;
+}
+.form-content{
+  display: inline-grid
+}
+
+form{
+  text-align: center;
+}
+
+input{
+  border-style: solid;
+  border-width: 2px;
+  width: 277px;
+  margin: 25px;
+  height: 23px;
+
+  border-radius: 4px;
+}
+input:hover{
+  color: coral;
+}
+
