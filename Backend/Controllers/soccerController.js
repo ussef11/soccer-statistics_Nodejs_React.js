@@ -56,7 +56,7 @@ const soccer =async  (req, res) => {
           let match_status = soccer[i]["match_status"];
           let match_hometeam_score;
           let match_awayteam_score;
-       
+      
           let team_home_badge = soccer[i]["team_home_badge"];
           let team_away_badge = soccer[i]["team_away_badge"];
          let league_logo = soccer[i]["league_logo"]

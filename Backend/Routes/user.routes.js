@@ -30,9 +30,9 @@ module.exports = function(app) {
 
 
 
-  app.post(
-    "/football/AddChannel",
-    [authJwt.verifyToken, authJwt.isAdmin],
-    soccer.AddChannel
-  );
+  // app.post(
+  //   "/football/AddChannel",
+  //   [authJwt.verifyToken, authJwt.isAdmin],
+  //   soccer.AddChannel
+  // );
 };
