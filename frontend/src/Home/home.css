@@ -318,11 +318,11 @@ color: rgb(255 111 35);
 }
 
 .hname{
-    margin-top: 12px;
+    /* margin-top: 12px; */
     font-size: 15px;
-   
+/*    
     position: relative;
-    top: -10px;
+    top: -10px; */
     color: black;
 
 }
