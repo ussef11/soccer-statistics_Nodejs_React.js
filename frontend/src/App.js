@@ -7,6 +7,7 @@ import Testpage from './test/test'
 import LivePage from './Lives/LivePage'
 import  Register from './Authentication/register.component'
 import Login from "./Authentication/login.component";
+import Admin from './Authentication/Admin.component'
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
      <Route path="/Live/:id" element={<LivePage/>} ></Route>
      <Route path="/Register" element={<Register/>} ></Route>
      <Route path="/Login" element={<Login/>} ></Route>
+     <Route path="/admin" element={<Admin/>} ></Route>
   </Routes>
   </BrowserRouter>
     </div>

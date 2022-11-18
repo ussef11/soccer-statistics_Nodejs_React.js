@@ -15,7 +15,9 @@ const soccer =async  (req, res) => {
   var config = {
     method: "get",
     url: `https://apiv3.apifootball.com/?&action=get_events&Widgetkey=893b8a8d15fa14f9ba4b684f1df592e740769586d0a302a04731404785f69321&timezone=%2B01%3A00&withOutDetails=true&_=1665666305646&from=${todaydate}&to=${todaydate}`,
-    headers: {},
+    headers: { 
+     
+    },
   };
   let i = 0;
   axios(config)
@@ -37,7 +39,8 @@ const soccer =async  (req, res) => {
           league_name == "La Liga" ||
           league_name == "Serie A" ||
           league_name.includes("CAF Champions League") ||
-          (league_name == "Premier League" && country_name == "England")
+          (league_name == "Premier League" && country_name == "England") ||
+          league_name.includes("Friendlies")
         ) {
 
           // console.log(await getinfo(soccer[i]["match_id"]))

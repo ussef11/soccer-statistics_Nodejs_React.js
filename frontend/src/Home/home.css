@@ -306,7 +306,8 @@ color: rgb(255 111 35);
     justify-content: center;
     display: flex;
     position: relative;
-    top: 4px;
+    /* top: 4px; */
+    height: 20vw
 }
 .matches{
     border: 1px solid white;

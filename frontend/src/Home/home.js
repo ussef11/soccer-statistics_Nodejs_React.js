@@ -46,6 +46,7 @@ const HomePage = () => {
   return (
     <div className="home">
       <div className="Homecontent">
+      
       {/* autoPlay={false} */}
         <Carousel autoPlay={false}>
           {matches &&

@@ -1,0 +1,31 @@
+.int{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  
+   
+    width: 247px;
+    margin: 25px;
+    height: 38px;
+    border-radius: 4px;
+}
+
+
+.button{
+    border: navajowhite;
+    background-color: #f7581e;
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    width: 168px;
+    margin: 25px;
+    height: 45px;
+    border-radius: 11px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: cursive;
+}

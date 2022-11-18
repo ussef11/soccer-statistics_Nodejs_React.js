@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "../Hook/UseFetch";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
+import authHeader from '../Services/auth-header';
 import "./admin.css";
 const AddChannels = () => {
   const [channel, setchannel] = useState();
@@ -34,7 +35,7 @@ const AddChannels = () => {
     e.preventDefault();
     fetch("http://localhost:3001/football/AddChannel", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers:   authHeader() ,
 
       body: JSON.stringify({ ChannelName: channel, MatchId: channelid , linkchaine :linkchaine}),
     })
