@@ -40,7 +40,8 @@ const soccer =async  (req, res) => {
           league_name == "Serie A" ||
           league_name.includes("CAF Champions League") ||
           (league_name == "Premier League" && country_name == "England") ||
-          league_name.includes("Friendlies")
+          league_name.includes("World Cup") ||
+          (league_name == "Premier League" &&  country_name == "Egypt")
         ) {
 
           // console.log(await getinfo(soccer[i]["match_id"]))
@@ -67,6 +68,7 @@ const soccer =async  (req, res) => {
           let hometeam = soccer[i]["match_hometeam_name"];
           let start = soccer[i]["match_live"];
           let match_time = soccer[i]["match_time"];
+          let country_name = soccer[i]["country_name"];
           let match_live;
 
 
@@ -80,7 +82,7 @@ const soccer =async  (req, res) => {
             matchfin = false;
             match_hometeam_score = soccer[i]["match_hometeam_score"];
             match_awayteam_score = soccer[i]["match_awayteam_score"];
-          }else if(match_status == "Finished"){
+          }else if(match_status == "Finished" || match_status =="After Pen."){
             match_live = "Live Now";
             match_time = soccer[i]["match_status"];
             matchfin = true;
@@ -103,8 +105,9 @@ const soccer =async  (req, res) => {
             team_home_badge: team_home_badge,
             match_status: match_status,
             matchfin:matchfin,
-           channel:channel,
-           league_logo:league_logo
+            channel:channel,
+            league_logo:league_logo,
+            country_name:country_name
            
           
           };
@@ -137,8 +140,11 @@ const AddChannel = (req,res)=>{
    NewChannel.save()
    .then((result)=>{
     res.json(`Channel ${NewChannel} Has Been Added :)`)
-   }).catch((err)=>{res.status(500).json(err) })
+   }).catch((err)=>{res.json(err) })
 }
+
+
+
 
 
 const  GetChannel =(req,res)=>{
@@ -154,4 +160,4 @@ const  GetChannel =(req,res)=>{
 
 }
 
-module.exports = { soccer,AddChannel,GetChannel };
+module.exports = { soccer,AddChannel,GetChannel};

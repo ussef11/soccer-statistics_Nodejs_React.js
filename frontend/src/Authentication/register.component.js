@@ -24,9 +24,10 @@ const handlesubmite =  (e) =>{
         console.log(message)
         setSeccussful(true)
     }).catch((error)=>{
+      setSeccussful(true)
       setMessage(error.response.data.message)
       console.log(error.response.data.message)
-      setSeccussful(true)
+    
     })
 
     
@@ -52,7 +53,7 @@ const handlesubmite =  (e) =>{
     return ( 
 
       <div className="register"> 
-        <div className="tit">
+        <div style={{textAlign:'center'}}  className="tit">
         <h3 style={{color:"white"}}>  {seccessful && message} </h3> 
 
       

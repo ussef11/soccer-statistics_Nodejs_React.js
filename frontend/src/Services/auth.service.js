@@ -3,6 +3,8 @@ import axios from "axios";
 const API_URL = "http://localhost:3001/api/auth/";
 
 class AuthService {
+
+
   login(username, password) {
     return axios
       .post(API_URL + "signin", {
@@ -20,6 +22,16 @@ class AuthService {
 
   logout() {
     localStorage.removeItem("user");
+  }
+
+
+  add(ChannelName,MatchId,linkchaine){
+    return axios.post(API_URL + 'Add',{
+      ChannelName,
+      MatchId,
+      linkchaine
+
+    })
   }
 
   register(username, email, password) {

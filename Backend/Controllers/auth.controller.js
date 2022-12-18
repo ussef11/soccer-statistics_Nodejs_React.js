@@ -2,9 +2,20 @@ const config = require("../config/auth.config");
 const db = require("../models");
 const User = db.user;
 const Role = db.role;
-
+const Channel = require('../models/channel.model')
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
+
+
+exports.AddChannel = (req,res)=>{
+ 
+  const NewChannel = Channel(req.body);
+  NewChannel.save()
+  .then((result)=>{
+   res.status(200).send(`Channel ${NewChannel} Has Been Added :)`)
+  }).catch((err)=>{res.json(err) })
+}
+
 
 exports.signup = (req, res) => {
   const user = new User({
@@ -119,3 +130,6 @@ exports.signout = async (req, res) => {
     this.next(err);
   }
 };
+
+
+

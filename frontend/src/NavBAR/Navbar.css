@@ -1,5 +1,7 @@
 .title{
     color: coral;
+    position: relative;
+    top: -11px;
   }
   .title :hover{
     color: rgb(255, 238, 0);
@@ -36,10 +38,12 @@ background-color: rgb(19, 19, 19);
   }
   
   .a{
+    margin-right: 12px;
     text-decoration: none;
-      color: rgb(253, 253, 253);
-      font-weight: 600;
-      padding: 5px;
+    color: rgb(255 184 184);
+    font-weight: 600;
+    padding: 5px;
+
   }
   .a:hover{
     color: brown;
@@ -69,6 +73,8 @@ background-color: rgb(19, 19, 19);
     
         margin-left: auto;
         display: flex;
+        position: relative;
+        top: 13px;
     }
   
   }

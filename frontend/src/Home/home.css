@@ -8,6 +8,15 @@
    
 }
 
+@media screen and (min-width : 700px ) {
+    
+    .home{
+        margin-left : 10%;
+         margin-right: 10%;
+}
+
+}
+
 .logos{
     display: flex;
     position: relative;
@@ -170,7 +179,13 @@ color: rgb(255 111 35);
 
 }
 
-
+.date{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    left: -38px;
+}
 .info{
     right:0;
     left:0;
@@ -307,7 +322,7 @@ color: rgb(255 111 35);
     display: flex;
     position: relative;
     /* top: 4px; */
-    height: 20vw
+    height: 69px 
 }
 .matches{
     border: 1px solid white;

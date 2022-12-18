@@ -6,6 +6,8 @@ const cookieSession = require("cookie-session");
 
 const SoccerRoute = require('./Routes/SoccerRoute')
 
+
+
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }))
 
@@ -15,7 +17,8 @@ const port = process.env.port || 3001
 
 
 var corsOptions = {
-    origin: "http://localhost:3000"
+    origin: "http://localhost:3000",
+ 
   };
   
   app.use(cors(corsOptions));
@@ -88,4 +91,4 @@ app.listen(port , ()=>{
 // routes
 require('./Routes/auth.routes')(app);
 require('./Routes/user.routes')(app);
-app.use("/football" , SoccerRoute)
+require("./Routes/SoccerRoute")(app);

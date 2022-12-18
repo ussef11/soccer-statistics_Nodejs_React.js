@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [date, setdate] = useState();
-  const [color, setcolor] = useState(false);
+  const [color, setcolor] = useState(0);
   const {
     Data: matches,
     ispending,
@@ -27,15 +27,11 @@ const HomePage = () => {
     e.preventDefault();
   };
 
-  
+  let lista = ["red","rgb(73, 62, 62)","red","rgb(73, 62, 62)"]
 
   setInterval(()=>{
 
-      setcolor(true) 
-      if(color)
-      {
-        setcolor(false)
-      }
+      setcolor(prev => prev == lista.length -1 ? 0 : prev+1) 
   },2500)
 
 
@@ -56,7 +52,7 @@ const HomePage = () => {
                   <div className="homeTeam">
                     <div className="img1">
                       {" "}
-                      <img src={data.team_home_badge} />{" "}
+                      <img src={data.team_home_badge} intrinsicsize="512x512" />{" "}
                     </div>
                     <div className="span1">
                       {" "}
@@ -66,7 +62,7 @@ const HomePage = () => {
                   <div className="awayTeam">
                     <div className="img1">
                       {" "}
-                      <img src={data.team_away_badge} />
+                      <img src={data.team_away_badge} intrinsicsize="512x512" />
                     </div>
                     <div className="span1">
                       {" "}
@@ -77,13 +73,13 @@ const HomePage = () => {
                 {data.matchStart ? (
                   <div className="started">
                      <div className="tournomantdiv">
-                      <span className="tournament">{data.league_name}</span>
+                      <span className="tournament">{data.league_name} - {data.country_name}</span>
                     </div>
                     <div className="line">
                       <img className="lineimg" src={line} />
                     </div>
 
-                    <div  className={data.matchfin ?  "livefin" :(  color ? "live" : "liveRed")} >
+                    <div  className="livefin"  style={{backgroundColor:`${lista[color]}`}}>
                   {/* //SSSSSSSSSSSSSS */}
                        
                         <span className="minstarta"> {data.match_status}'</span>
@@ -126,7 +122,7 @@ const HomePage = () => {
                 ) : (
                   <div className="notStarted">
                     <div className="tournomantdiv">
-                      <span className="tournament">{data.league_name}</span>
+                      <span className="tournament">{data.league_name} - {data.country_name}</span>
                     </div>
                     <div className="line">
                       <img className="lineimg" src={line} />
@@ -178,7 +174,7 @@ const HomePage = () => {
 
 
           {matches && matches.map((data) => (
-<Link style={{"text-decoration":"none"}} to={`/Live/${data.match_id}`}> 
+<Link style={{"text-decoration":"none"}} to={`/Live/${data.match_id}/${data.hometeam}/${data.awayTeam}`}> 
             <div className="matches">
               <div className="details">
                 <div className="homet">
@@ -191,7 +187,7 @@ const HomePage = () => {
                  <span className="homer">{data.match_hometeam_score}</span>
                  <span className="sp">-</span>
                  <span className="awayr">{data.match_awayteam_score}</span>
-                 <div  className={data.matchfin ?  "liveNowfin" : (  color ? "liveNow" : "livenowred")} >
+                 <div  className="liveNowfin"  style={{backgroundColor:`${lista[color]}`}} >
                   
                   <span  className="minstart"> {data.match_status}<sup>'</sup> </span>
                

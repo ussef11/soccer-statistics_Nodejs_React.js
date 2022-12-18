@@ -4,12 +4,15 @@ import useFetch from "../Hook/UseFetch";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import authHeader from '../Services/auth-header';
+import authService from '../Services/auth.service';
 import "./admin.css";
+import { Alert } from "@mui/material";
 const AddChannels = () => {
   const [channel, setchannel] = useState();
   const [channelid, setchannelid] = useState();
   const [linkchaine, setlinkchaine] = useState();
-
+  const [seccessful , setSeccussful] = useState()
+  const [message , setMessage] = useState("")
   const [ispanding ,setispanding ] = useState(true);
   const { id } = useParams();
 
@@ -31,23 +34,21 @@ const AddChannels = () => {
     { name: "Bein Sport Xtra 2" },
   ];
 
+
+
   const handlesubmite = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/football/AddChannel", {
-      method: "POST",
-      headers:   authHeader() ,
-
-      body: JSON.stringify({ ChannelName: channel, MatchId: channelid , linkchaine :linkchaine}),
-    })
-      .then(() => {
-        console.log("Channels Has been Added");
-        alert("has been added")
-        
-        // navigate("/")
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    
+    authService.add(channel, channelid,linkchaine).then((res)=>{
+     
+      alert("Done")
+      setSeccussful(true)
+  }).catch((error)=>{
+    setSeccussful(true)
+ 
+    alert("error")
+  
+  })
   };
 
   const {
@@ -61,7 +62,6 @@ const AddChannels = () => {
   return (
     <div className="addchannel">
       <h1 className="title">Add Channels</h1>
-
       <form className="form" onSubmit={handlesubmite}>
         {/* <p style={{"color":"white"}}>{data.hometeam}  ::{data.match_id} </p>  */}
         <div className="infos">

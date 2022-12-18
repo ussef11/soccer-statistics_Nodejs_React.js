@@ -66,10 +66,10 @@ useEffect(()=>{
         <nav className="navbar">
         <div className="content">
             <div className="title">
-                <h1 className="logo">Bermuda</h1>
+                <h1 className="logo"> <Link  style={{textDecoration:'none' , color:'wheat'}} to="/">  Bermuda</Link></h1>
             </div>
           {showopt ? <div  className="navopt">
-          <Link className="a" to="/">Home</Link>
+          <Link  className="a" to="/">Home</Link>
                 {/* <Link className="a" to="/test">TEST</Link> */}
                 {showadminBoard &&   <Link className="a" to="/add/">Add channel</Link> }  
                 {/* <Link className="a" to="/Live/">Live</Link> */}

@@ -19,6 +19,8 @@ const Login = () => {
       navigate("/");
       window.location.reload();
     }).catch((err)=>{
+      setSeccussful(true)
+      setMessage(err.response.data.message)
       console.log(err.response.data.message)
       
     })
@@ -48,7 +50,7 @@ const Login = () => {
     return ( 
 
       <div className="login"> 
-      <div className="title">
+      <div style={{textAlign:'center'}} className="title">
       <h3 style={{color:"white"}}>  {seccessful && message} </h3> 
       </div>
         <form onSubmit={handlesubmit}>
