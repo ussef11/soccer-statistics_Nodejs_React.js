@@ -6,7 +6,7 @@ import screenfull from 'screenfull';
 import useFetch from '../Hook/UseFetch';
 import './Livepage.css';
 import m3u from '../svg/tvlist.m3u'
-import {ReactFlvPlayer} from 'react-flv-player'
+
 
 const Livepage = () => {
   const [hls , sethls] = useState()
