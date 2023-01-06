@@ -14,7 +14,7 @@ const soccer =async  (req, res) => {
 
   var config = {
     method: "get",
-    url: `https://apiv3.apifootball.com/?&action=get_events&Widgetkey=893b8a8d15fa14f9ba4b684f1df592e740769586d0a302a04731404785f69321&timezone=%2B01%3A00&withOutDetails=true&_=1665666305646&from=${todaydate}&to=${todaydate}`,
+    url: ``,
     headers: { 
      
     },
